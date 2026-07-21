@@ -1,0 +1,91 @@
+.project{
+    background: linear-gradient(135deg, #000000 20%, #000000 45%, #8a2be2 100%);
+    /* min-height: 500px; */
+    margin-top: 50px;
+    padding: 0px 100px;
+}
+
+.project h2{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+
+.project p{
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(204, 204, 204);
+}
+
+.container{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.card_container{
+    position: relative;
+    flex: 1;
+    height: 300px;
+     z-index: 0;
+    isolation: isolate;
+}
+.top_card {
+    width: 80%;
+    height: 190px;
+    border-radius: 22px;
+    padding: 20px;
+    position: absolute;
+    top: 80px;
+    left: 10%;
+
+    z-index: 10; /* higher */
+
+    background: linear-gradient(
+        145deg,
+        rgba(181, 120, 255, 0.692),
+        rgba(212, 148, 255, 0.603),
+        rgba(253, 253, 253, 0.75)
+    );
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 12px 30px rgba(76, 29, 149, 0.35),
+        inset 0 1px 1px rgba(255,255,255,0.18);
+}
+
+.top_card p{
+    color: rgb(34, 34, 34); 
+}
+
+
+.bottom_card {
+    position: relative;
+    z-index: 1; /* lower */
+
+    color: wheat;
+
+    height: 150px;
+    border-radius: 32px;
+    padding: 20px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(255,255,255,0.16),
+        rgba(255,255,255,0.06)
+    );
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border: none;
+
+    box-shadow:
+    inset 0 1px 1px rgba(255,255,255,0.15),
+    0 20px 45px rgba(0,0,0,0.55);
+}

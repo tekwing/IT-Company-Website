@@ -1,0 +1,47 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 40px;
+    box-sizing: border-box;
+
+    background: transparent;
+    z-index: 10;
+}
+
+.navbar h2{
+    color: aliceblue;
+}
+
+.scrolled {
+    background: rgba(14, 13, 13, 0.3);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(156, 91, 247, 0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.navbar ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar li a{
+    color:rgb(240, 242, 245);
+    text-decoration: none;
+}
+
+.navbar button{
+    color: rgb(240, 242, 245);
+    border-radius: 16px;
+    padding: 10px 10px;
+    background-color: rgb(133, 71, 190);
+    border: none;
+}

@@ -1,0 +1,156 @@
+.contact {
+    margin-top: 100px;
+    padding: 0 100px;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #222;
+    margin-bottom: 40px;
+}
+
+
+.container {
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+}
+
+
+/* Form Section */
+.left_container {
+    flex: 1;
+    background: linear-gradient(135deg, #8f5b5b, #c98b8b);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+
+.left_container form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 15px 18px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    outline: none;
+    background-color: white;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+
+.input {
+    height: 50px;
+}
+
+
+.textarea {
+    height: 130px;
+    resize: none;
+}
+
+
+.input:focus,
+.textarea:focus {
+    border-color: #000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+
+.submit_btn {
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    background: #9054c9;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+.submit_btn:hover {
+    background: #7d0be7;
+    transform: translateY(-3px);
+}
+
+
+
+/* Right Section */
+.right_container {
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+
+.company_contact {
+    background: #fff;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+
+.company_contact h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.company_contact p {
+    color: #555;
+    line-height: 1.6;
+}
+
+
+
+/* AI Button */
+.ai_button {
+    height: 55px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg,#944ed6,#cb92e6);
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+
+.ai_button:hover {
+    transform: translateY(-4px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+
+/* Responsive */
+@media(max-width:900px){
+
+    .contact {
+        padding:0 25px;
+    }
+
+    .container {
+        flex-direction:column;
+    }
+
+    .submit_btn {
+        width:80%;
+    }
+}
