@@ -54,13 +54,21 @@ function Services(){
                     <motion.div
                     key={service.title}
                     className={styles.column}
-                    initial={{
-                        opacity: 0,
-                        x: index % 2 === 0 ? -100 : 100,
-                    }}
+                    initial={
+                        index === 1 || index === 4
+                            ? {
+                                opacity: 0,
+                                y: 100,
+                            }
+                            : {
+                                opacity: 0,
+                                x: index === 2 || index === 5 ? 100 : -100,
+                            }
+                    }
                     whileInView={{
                         opacity: 1,
                         x: 0,
+                        y: 0,
                     }}
                     viewport={{ once: false, amount: 0.3 }}
                     transition={{
@@ -82,13 +90,21 @@ function Services(){
                     <motion.div
                     key={service.title}
                     className={styles.column}
-                    initial={{
-                        opacity: 0,
-                        x: index % 2 === 0 ? -100 : 100,
-                    }}
+                    initial={
+                        index === 1 || index === 4
+                            ? {
+                                opacity: 0,
+                                y: 100,
+                            }
+                            : {
+                                opacity: 0,
+                                x: index === 2 || index === 5 ? 100 : -100,
+                            }
+                    }
                     whileInView={{
                         opacity: 1,
                         x: 0,
+                        y: 0,
                     }}
                     viewport={{ once: false, amount: 0.3 }}
                     transition={{
